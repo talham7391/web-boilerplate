@@ -6,6 +6,10 @@ Boilerplate to launch any service to AWS easily.
 
 Your service will be launched using AWS ECS backed by an EC2 instance. You can modify `templates/infrastructure.yaml` if you need a bigger instance. The default is `t2.micro`.
 
+### Cost
+
+Since your AWS ECS services/tasks are backed by an EC2 instance, the only costs you'll incure are the provisioned EC2 instance as well as networking i/o. As a baseline, `t2.micro` costs just over $5 per month. More detailed pricing can be found [here](https://aws.amazon.com/ec2/pricing/on-demand/).
+
 # Usage
 
 1. Dockerize your service.
